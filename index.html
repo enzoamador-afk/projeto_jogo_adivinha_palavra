@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Jogo de adivinhar palavra</title>
 </head>
 <body>
 
     <h1 id="tituloP">Palavra: 0</h1>
+        
+    <form action="" id="form-enviar">
+        <input type="password" id="palavraDigitada" name="palavraDigita" placeholder="Digite a palavra secreta..." required> 
+        <button id="btnEnviarSecreta">Enviar</button>
+    </form>
+    
 
-    <h2 id="palavraSecreta">_____</h2>
+    <h2 id="mostrarPalavraSecreta"></h2>
 
      <div class="controle-resposta">
       <input type="text" id="input-palavra" placeholder="Digite sua resposta..." />
-      <button onclick="verificarResposta()">Responder</button>
+      <button>Responder</button>
     </div>
 
     <script src="script.js"></script>
